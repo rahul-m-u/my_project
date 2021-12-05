@@ -4,7 +4,7 @@ def get_env():
     dir_name = os.path.dirname(__file__)
     path = os.path.join(dir_name, '.env')
     if not os.path.exists(path):
-        raise SystemExit(".django-env is not present. Please create one.")
+        raise SystemExit(".env is not present. Please create one.")
 
     fp = open(path)
     mode = fp.read().strip()
